@@ -7,7 +7,7 @@ class CoffeeMachine:
         self.cups = cups
         self.money = money
 
-    def remaining(self):  # function for prompting the user
+    def remaining(self):  # prompting the user
         print()
         print('The coffee machine has:')
         print(str(self.water) + ' of water')
@@ -16,7 +16,7 @@ class CoffeeMachine:
         print(str(self.cups) + ' of disposable cups')
         print('$' + str(self.money) + ' of money')
 
-    def buy_coffee(self):  # function for buying coffee
+    def buy_coffee(self):  # buying coffee
         print()
         type_ = input('What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:\n> ').strip()
         if type_ == '1':
