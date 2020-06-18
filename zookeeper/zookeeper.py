@@ -128,5 +128,7 @@ while True:
     if user_input == 'exit':
         print('See you!')
         break
-    else:
+    elif 0 <= int(user_input) < 6:
         print(animals[int(user_input)])
+    else:
+        print('habitat # must be between 0 and 5!\n')
